@@ -1,0 +1,217 @@
+.stat-card {
+    border: solid;
+    border: 1px solid #cccccc55;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(7, 42, 200, 0.05);
+}
+
+.stat-card__wrapper {
+    margin: 20px;
+}
+
+.stat-card__general-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-name h3{
+    text-align: left;
+    color: #747474;
+}
+
+.number-name h2 {
+    color: #072ac8;
+    font-size: 30px;
+}
+
+.types-info {
+    display: flex;
+    align-items: center;
+}
+
+.stat-card__general-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+
+.stats {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.stats h4 {
+    margin: 20px 0 5px 0;
+}
+
+.hot-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item {
+    margin-bottom: 10px;
+}
+
+.stat-bar {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.stat-bar.hp { 
+    background-color: rgba(144, 238, 144, 0.3);
+}
+
+.stat-bar.attack {
+    background-color: rgba(255, 192, 203, 0.3);
+}
+
+.stat-bar.defense {
+    background-color: rgba(255, 230, 153, 0.3);
+}
+
+.stat-bar.speed {
+    background-color: rgba(255, 204, 153, 0.3);
+}
+
+.hp .stat-fill {
+    background-color: #60d394;
+}
+
+.attack .stat-fill {
+    background-color: #f14b3d;
+}
+
+.defense .stat-fill {
+    background-color: #fdd85d;
+}
+
+.speed .stat-fill {
+    background-color: #ff844f;
+}
+
+.stat-card__header {
+    text-align: left;
+}
+
+.stat-card__breeding-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.breeding-content {
+    width: 45%;
+    margin: 5px;
+}
+
+.breeding-content div {
+    min-width: 150px;
+    padding: 5px 25px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #eee;
+    border: 1px solid #dbd1d1d7;
+    box-shadow: 6px 2px 39px 13px rgba(0, 0, 0, 0.07);
+}
+
+.stat-card__abilities-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.ability {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.ability-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    color: rgb(187, 154, 44);
+}
+
+.yellow {
+    background-color: #fdd85d;
+}
+
+.yellow p {
+    color: rgb(187, 154, 44);
+}
+
+.orange {
+    background-color: #ff844f;
+}
+
+.orange p {
+    color: #eee;
+}
+
+.red {
+    background-color: #f14b3d; 
+}
+
+.red p {
+    color: #eee;
+}
+
+.stat-card__abilities-content p {
+    margin: 10px 0 0 0 ;
+}
+
+@media screen and (max-width: 768px) {
+    .stat-card {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    .stat-card__wrapper {
+        margin: 1px;
+    }
+
+    .stat-item {
+        margin-bottom: 5px;
+    }
+
+    .breeding-content div {
+        width: 100%;
+    }
+
+    .type {
+        height: 30px;
+        width: 90px;
+    }
+}
+.stat-card__general-content img {
+    max-width: 230px; 
+    height: 260px; 
+    margin-top: 20px;
+}
